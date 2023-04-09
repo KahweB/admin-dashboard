@@ -26,9 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -41,8 +39,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	text-decoration: none;
+	color: white;
+}
 
 /* ----- RESET END ----- */
+:root{
+	--main_font:'Roboto', sans-serif; 
+}
 .container {
     display: grid;
     height: 100vh;
@@ -55,7 +60,54 @@ table {
 .sidebar {
     grid-area: 1 / 1 / 6 / 2; 
     background-color: #4ade80;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+.logo_container{
+	display: flex;
+	margin-top: 20px;
+	width: 250px;
+}
+.logo{
+	fill: white;
+	width: 80px;
+	height: 100px;
+}
+.logo_brand_name{
+	display: flex;
+	font-family: var(--main_font);
+	font-size: 50px;
+	text-align: center;
+	align-items: center;
+	font-weight: bolder;
+	color: white;
+}
+.side_menu_top{
+	width: 100%;
+}
+.side_menu_top > ul {
+	height: 200px;
+	
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	list-style: none;
+	font-family: var(--main_font);
+	color: white;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+
+li > img{
+	width: 20px;
+	margin: 0px 5px 0px 5px;
+	fill: white;
+
+}
+
 .topbar { 
     grid-area: 1 / 2 / 2 / 6; 
     background-color: #15803d;
