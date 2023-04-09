@@ -43,3 +43,24 @@ table {
 }
 
 /* ----- RESET END ----- */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.sidebar {
+    grid-area: 1 / 1 / 6 / 2; 
+    background-color: #4ade80;
+}
+.topbar { 
+    grid-area: 1 / 2 / 2 / 6; 
+    background-color: #15803d;
+}
+.main-area { 
+    grid-area: 2 / 2 / 6 / 6; 
+    background-color: whitesmoke;
+}
