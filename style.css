@@ -115,6 +115,7 @@ li > a > img{
 	display: flex;
 	flex-direction: column;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #topbar_top{
 	display: flex;
@@ -174,7 +175,6 @@ li > a > img{
 .greeting_text{
 	display: flex;
 	flex-direction: column;
-	
 }
 #topbar_bottom_greeting{
 	display: flex;
@@ -218,8 +218,44 @@ li > a > img{
 	font-weight: bolder;
 	font-size: small;
 }
+
+/*---------------- MAIN AREA -----------------*/
+
 .main-area { 
     grid-area: 2 / 2 / 6 / 6; 
+	display: flex;
     background-color: whitesmoke;
 	background-color: var(--color_black_darker);
+	padding-top: 10px;
 }
+#main_left{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 40px repeat(3,1fr);
+	height: 100%;
+	width: 80%;
+	padding-left: 10px;
+}
+.main_left_banner{
+	color: white;
+	font-family: var(--main_font);
+	grid-area: 1/1/2/2;
+	font-weight: 900;
+	font-size: 20px;
+	align-self: center;
+}
+.card{
+	margin:10px;
+	border-radius: 20px;
+	background-color: var(--color_black);
+}
+#main_right{
+	display: flex;
+	flex: 1;
+	height: 100%;
+}
+.empty{
+	grid-area: 1/2/2/3 ;
+}
+
