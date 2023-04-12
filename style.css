@@ -83,10 +83,10 @@ a{
 	font-weight: bolder;
 	color: white;
 }
-.side_menu_top{
+.side_menu{
 	width: 100%;
 }
-.side_menu_top > ul {
+.side_menu > ul {
 	height: 200px;
 	
 	margin-top: 50px;
@@ -99,9 +99,17 @@ a{
 	font-size: 20px;
 	font-weight: 900;
 }
+.side_menu > ul > li{
+	padding-left: 30%;
+}
+.side_menu_bottom{
+	margin-top: 50px;
+}
+.side_menu_bottom > ul{
+	height: 110px;
+}
 
-
-li > img{
+li > a > img{
 	width: 20px;
 	margin: 0px 5px 0px 5px;
 	fill: white;
